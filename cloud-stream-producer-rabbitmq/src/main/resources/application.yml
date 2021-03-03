@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    addresses: localhost
+  cloud:
+    stream:
+      bindings:
+        greetingChannel:
+          destination: greetings
+server:
+  port: 8080
+  servlet:
+    context-path: /PRODUCER
